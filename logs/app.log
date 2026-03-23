@@ -786,3 +786,1254 @@ mk.ukim.finki.wp.eimt_lab.model.exception.AuthorNotFoundException: A author with
 
 2026-03-23T02:11:53.216+01:00  INFO 6312 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-03-23T02:11:53.221+01:00  INFO 6312 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T02:11:56.774+01:00  INFO 26300 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 26300 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T02:11:56.777+01:00  INFO 26300 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T02:11:58.478+01:00  INFO 26300 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T02:11:58.479+01:00  INFO 26300 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T02:11:58.539+01:00  INFO 26300 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T02:11:58.814+01:00  INFO 26300 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T02:11:58.976+01:00  INFO 26300 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74a58a06
+2026-03-23T02:11:58.978+01:00  INFO 26300 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T02:11:59.009+01:00  INFO 26300 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T02:11:59.095+01:00  INFO 26300 --- [eimt_lab] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-03-23T02:11:59.102+01:00  INFO 26300 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.032s)
+2026-03-23T02:11:59.132+01:00  INFO 26300 --- [eimt_lab] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-03-23T02:11:59.219+01:00  INFO 26300 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-03-23T02:11:59.238+01:00  INFO 26300 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create books and authors"
+2026-03-23T02:11:59.299+01:00  INFO 26300 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - insert data into books and authors and countries tables"
+2026-03-23T02:11:59.359+01:00  INFO 26300 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "public", now at version v2 (execution time 00:00.041s)
+2026-03-23T02:11:59.458+01:00  INFO 26300 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T02:11:59.509+01:00  INFO 26300 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T02:11:59.564+01:00  INFO 26300 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T02:11:59.898+01:00  INFO 26300 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T02:12:00.792+01:00  INFO 26300 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T02:12:01.173+01:00  WARN 26300 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T02:12:01.594+01:00  INFO 26300 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 5.56 seconds (process running for 6.489)
+2026-03-23T02:12:04.713+01:00  INFO 26300 --- [eimt_lab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T02:12:06.211+01:00  INFO 26300 --- [eimt_lab] [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 794 ms
+2026-03-23T02:12:18.836+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-3] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T02:12:18.840+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9007199254740991]
+2026-03-23T02:12:18.910+01:00 ERROR 26300 --- [eimt_lab] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: mk.ukim.finki.wp.eimt_lab.model.exception.AuthorNotFoundException: A author with id 9007199254740991 does not exist.] with root cause
+
+mk.ukim.finki.wp.eimt_lab.model.exception.AuthorNotFoundException: A author with id 9007199254740991 does not exist.
+	at mk.ukim.finki.wp.eimt_lab.service.application.impl.BookApplicationServiceImpl.lambda$create$0(BookApplicationServiceImpl.java:45) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at mk.ukim.finki.wp.eimt_lab.service.application.impl.BookApplicationServiceImpl.create(BookApplicationServiceImpl.java:45) ~[classes/:na]
+	at mk.ukim.finki.wp.eimt_lab.web.controller.BookController.create(BookController.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-03-23T02:13:47.563+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T02:13:47.563+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T02:13:47.719+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.SQL                        : insert into books (author_id,category,created_at,name,rented,state,updated_at) values (?,?,?,?,?,?,?)
+2026-03-23T02:13:47.720+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T02:13:47.720+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [NOVEL]
+2026-03-23T02:13:47.720+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (3:TIMESTAMP) <- [2026-03-23T02:13:47.644147500]
+2026-03-23T02:13:47.720+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [string]
+2026-03-23T02:13:47.720+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (5:BOOLEAN) <- [true]
+2026-03-23T02:13:47.720+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (6:VARCHAR) <- [GOOD]
+2026-03-23T02:13:47.720+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (7:TIMESTAMP) <- [2026-03-23T02:13:47.644147500]
+2026-03-23T02:13:55.853+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0
+2026-03-23T02:13:55.870+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T02:13:55.870+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+2026-03-23T02:13:55.881+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T02:13:55.882+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T02:13:55.887+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T02:13:55.888+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2026-03-23T02:14:48.264+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T02:14:48.266+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T02:14:48.284+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0 join authors a1_0 on a1_0.id=b1_0.author_id join countries c1_0 on c1_0.id=a1_0.country_id where b1_0.id=?
+2026-03-23T02:14:48.284+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T02:14:48.317+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.SQL                        : update books set author_id=?,category=?,name=?,rented=?,state=?,updated_at=? where id=?
+2026-03-23T02:14:48.317+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T02:14:48.317+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [NOVEL]
+2026-03-23T02:14:48.317+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [da]
+2026-03-23T02:14:48.323+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (4:BOOLEAN) <- [true]
+2026-03-23T02:14:48.323+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (5:VARCHAR) <- [GOOD]
+2026-03-23T02:14:48.324+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (6:TIMESTAMP) <- [2026-03-23T02:14:48.302949900]
+2026-03-23T02:14:48.324+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (7:BIGINT) <- [1]
+2026-03-23T02:14:54.128+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0
+2026-03-23T02:14:54.135+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T02:14:54.135+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T02:14:54.143+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T02:14:54.144+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2026-03-23T02:15:17.710+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0
+2026-03-23T02:15:17.717+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T02:15:17.718+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T02:15:17.724+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T02:15:17.725+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2026-03-23T02:15:53.412+01:00 DEBUG 26300 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0 join authors a1_0 on a1_0.id=b1_0.author_id join countries c1_0 on c1_0.id=a1_0.country_id where b1_0.id=?
+2026-03-23T02:15:53.413+01:00 TRACE 26300 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T02:39:40.998+01:00  WARN 26300 --- [eimt_lab] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m11s600ms692µs200ns).
+2026-03-23T03:32:52.409+01:00  WARN 26300 --- [eimt_lab] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m11s340ms161µs400ns).
+2026-03-23T05:50:55.672+01:00  WARN 26300 --- [eimt_lab] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m2s187ms54µs).
+2026-03-23T13:44:53.263+01:00  WARN 26300 --- [eimt_lab] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h53m57s583ms284µs900ns).
+2026-03-23T14:15:15.072+01:00  INFO 26300 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T14:15:15.074+01:00  INFO 26300 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T14:17:42.525+01:00  INFO 27544 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 27544 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T14:17:42.527+01:00  INFO 27544 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T14:17:43.604+01:00  INFO 27544 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T14:17:43.604+01:00  INFO 27544 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T14:17:43.650+01:00  INFO 27544 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T14:17:43.827+01:00  INFO 27544 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T14:17:43.961+01:00  INFO 27544 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64440065
+2026-03-23T14:17:43.963+01:00  INFO 27544 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T14:17:43.985+01:00  INFO 27544 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T14:17:44.045+01:00  INFO 27544 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.032s)
+2026-03-23T14:17:44.087+01:00  INFO 27544 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 2
+2026-03-23T14:17:44.101+01:00  INFO 27544 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - add available copies"
+2026-03-23T14:17:44.128+01:00 ERROR 27544 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migration of schema "public" to version "3 - add available copies" failed! Changes successfully rolled back.
+2026-03-23T14:17:44.138+01:00  WARN 27544 --- [eimt_lab] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__add_available_copies.sql failed
+------------------------------------------
+SQL State  : 42701
+Error Code : 0
+Message    : ERROR: column "created_at" of relation "books" already exists
+Location   : db/migration/V3__add_available_copies.sql (C:\desktop\eimt_lab\target\classes\db\migration\V3__add_available_copies.sql)
+Line       : 2
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+2026-03-23T14:17:44.138+01:00  INFO 27544 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T14:17:44.176+01:00  INFO 27544 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T14:17:44.179+01:00  INFO 27544 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-23T14:17:44.207+01:00 ERROR 27544 --- [eimt_lab] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__add_available_copies.sql failed
+------------------------------------------
+SQL State  : 42701
+Error Code : 0
+Message    : ERROR: column "created_at" of relation "books" already exists
+Location   : db/migration/V3__add_available_copies.sql (C:\desktop\eimt_lab\target\classes\db\migration\V3__add_available_copies.sql)
+Line       : 2
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at mk.ukim.finki.wp.eimt_lab.EimtLabApplication.main(EimtLabApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__add_available_copies.sql failed
+------------------------------------------
+SQL State  : 42701
+Error Code : 0
+Message    : ERROR: column "created_at" of relation "books" already exists
+Location   : db/migration/V3__add_available_copies.sql (C:\desktop\eimt_lab\target\classes\db\migration\V3__add_available_copies.sql)
+Line       : 2
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 10 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywayMigrateException: Script V3__add_available_copies.sql failed
+------------------------------------------
+SQL State  : 42701
+Error Code : 0
+Message    : ERROR: column "created_at" of relation "books" already exists
+Location   : db/migration/V3__add_available_copies.sql (C:\desktop\eimt_lab\target\classes\db\migration\V3__add_available_copies.sql)
+Line       : 2
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:399) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:283) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:59) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:282) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:255) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:153) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:77) ~[flyway-database-postgresql-10.20.1.jar:na]
+	at org.flywaydb.database.postgresql.PostgreSQLAdvisoryLockTemplate.lambda$execute$0(PostgreSQLAdvisoryLockTemplate.java:60) ~[flyway-database-postgresql-10.20.1.jar:na]
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:59) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:60) ~[flyway-database-postgresql-10.20.1.jar:na]
+	at org.flywaydb.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:105) ~[flyway-database-postgresql-10.20.1.jar:na]
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:149) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:153) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:104) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:230) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:176) ~[flyway-core-10.20.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.4.3.jar:3.4.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Script V3__add_available_copies.sql failed
+------------------------------------------
+SQL State  : 42701
+Error Code : 0
+Message    : ERROR: column "created_at" of relation "books" already exists
+Location   : db/migration/V3__add_available_copies.sql (C:\desktop\eimt_lab\target\classes\db\migration\V3__add_available_copies.sql)
+Line       : 2
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:256) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:217) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:137) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:75) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:66) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:31) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:65) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:391) ~[flyway-core-10.20.1.jar:na]
+	... 36 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: column "created_at" of relation "books" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:210) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:88) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:212) ~[flyway-core-10.20.1.jar:na]
+	... 42 common frames omitted
+
+2026-03-23T14:18:19.317+01:00  INFO 21608 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 21608 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T14:18:19.320+01:00  INFO 21608 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T14:18:20.461+01:00  INFO 21608 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T14:18:20.461+01:00  INFO 21608 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T14:18:20.504+01:00  INFO 21608 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T14:18:20.690+01:00  INFO 21608 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T14:18:20.796+01:00  INFO 21608 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66b0e207
+2026-03-23T14:18:20.796+01:00  INFO 21608 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T14:18:20.819+01:00  INFO 21608 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T14:18:20.858+01:00  INFO 21608 --- [eimt_lab] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-03-23T14:18:20.862+01:00  INFO 21608 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.018s)
+2026-03-23T14:18:20.878+01:00  INFO 21608 --- [eimt_lab] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-03-23T14:18:20.960+01:00  INFO 21608 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-03-23T14:18:20.976+01:00  INFO 21608 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create books and authors"
+2026-03-23T14:18:21.018+01:00  INFO 21608 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - insert data into books and authors and countries tables"
+2026-03-23T14:18:21.052+01:00  INFO 21608 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - add available copies"
+2026-03-23T14:18:21.067+01:00 ERROR 21608 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migration of schema "public" to version "3 - add available copies" failed! Changes successfully rolled back.
+2026-03-23T14:18:21.076+01:00  WARN 21608 --- [eimt_lab] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__add_available_copies.sql failed
+------------------------------------------
+SQL State  : 42701
+Error Code : 0
+Message    : ERROR: column "created_at" of relation "books" already exists
+Location   : db/migration/V3__add_available_copies.sql (C:\desktop\eimt_lab\target\classes\db\migration\V3__add_available_copies.sql)
+Line       : 2
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+2026-03-23T14:18:21.076+01:00  INFO 21608 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T14:18:21.088+01:00  INFO 21608 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T14:18:21.090+01:00  INFO 21608 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-23T14:18:21.109+01:00 ERROR 21608 --- [eimt_lab] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__add_available_copies.sql failed
+------------------------------------------
+SQL State  : 42701
+Error Code : 0
+Message    : ERROR: column "created_at" of relation "books" already exists
+Location   : db/migration/V3__add_available_copies.sql (C:\desktop\eimt_lab\target\classes\db\migration\V3__add_available_copies.sql)
+Line       : 2
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at mk.ukim.finki.wp.eimt_lab.EimtLabApplication.main(EimtLabApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__add_available_copies.sql failed
+------------------------------------------
+SQL State  : 42701
+Error Code : 0
+Message    : ERROR: column "created_at" of relation "books" already exists
+Location   : db/migration/V3__add_available_copies.sql (C:\desktop\eimt_lab\target\classes\db\migration\V3__add_available_copies.sql)
+Line       : 2
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 10 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywayMigrateException: Script V3__add_available_copies.sql failed
+------------------------------------------
+SQL State  : 42701
+Error Code : 0
+Message    : ERROR: column "created_at" of relation "books" already exists
+Location   : db/migration/V3__add_available_copies.sql (C:\desktop\eimt_lab\target\classes\db\migration\V3__add_available_copies.sql)
+Line       : 2
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:399) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:283) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:59) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:282) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:255) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:153) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:77) ~[flyway-database-postgresql-10.20.1.jar:na]
+	at org.flywaydb.database.postgresql.PostgreSQLAdvisoryLockTemplate.lambda$execute$0(PostgreSQLAdvisoryLockTemplate.java:60) ~[flyway-database-postgresql-10.20.1.jar:na]
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:59) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:60) ~[flyway-database-postgresql-10.20.1.jar:na]
+	at org.flywaydb.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:105) ~[flyway-database-postgresql-10.20.1.jar:na]
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:149) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:153) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:104) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:230) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:176) ~[flyway-core-10.20.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.4.3.jar:3.4.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Script V3__add_available_copies.sql failed
+------------------------------------------
+SQL State  : 42701
+Error Code : 0
+Message    : ERROR: column "created_at" of relation "books" already exists
+Location   : db/migration/V3__add_available_copies.sql (C:\desktop\eimt_lab\target\classes\db\migration\V3__add_available_copies.sql)
+Line       : 2
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:256) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:217) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:137) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:75) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:66) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:31) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:65) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:391) ~[flyway-core-10.20.1.jar:na]
+	... 36 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: column "created_at" of relation "books" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:210) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:88) ~[flyway-core-10.20.1.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:212) ~[flyway-core-10.20.1.jar:na]
+	... 42 common frames omitted
+
+2026-03-23T14:19:02.257+01:00  INFO 9712 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 9712 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T14:19:02.260+01:00  INFO 9712 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T14:19:03.484+01:00  INFO 9712 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T14:19:03.484+01:00  INFO 9712 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T14:19:03.563+01:00  INFO 9712 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T14:19:03.740+01:00  INFO 9712 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T14:19:03.841+01:00  INFO 9712 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@72224107
+2026-03-23T14:19:03.844+01:00  INFO 9712 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T14:19:03.866+01:00  INFO 9712 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T14:19:03.907+01:00  INFO 9712 --- [eimt_lab] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-03-23T14:19:03.910+01:00  INFO 9712 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.017s)
+2026-03-23T14:19:03.928+01:00  INFO 9712 --- [eimt_lab] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-03-23T14:19:03.999+01:00  INFO 9712 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-03-23T14:19:04.012+01:00  INFO 9712 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create books and authors"
+2026-03-23T14:19:04.058+01:00  INFO 9712 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - insert data into books and authors and countries tables"
+2026-03-23T14:19:04.094+01:00  INFO 9712 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - add available copies"
+2026-03-23T14:19:04.121+01:00  INFO 9712 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "public", now at version v3 (execution time 00:00.034s)
+2026-03-23T14:19:04.232+01:00  INFO 9712 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T14:19:04.304+01:00  INFO 9712 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T14:19:04.336+01:00  INFO 9712 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T14:19:04.642+01:00  INFO 9712 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T14:19:05.418+01:00  INFO 9712 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T14:19:05.709+01:00  WARN 9712 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T14:19:06.040+01:00  INFO 9712 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 4.145 seconds (process running for 4.615)
+2026-03-23T14:19:08.516+01:00  INFO 9712 --- [eimt_lab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T14:19:09.622+01:00  INFO 9712 --- [eimt_lab] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 662 ms
+2026-03-23T14:20:29.802+01:00  INFO 9712 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T14:20:29.805+01:00  INFO 9712 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T14:20:34.283+01:00  INFO 15200 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 15200 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T14:20:34.285+01:00  INFO 15200 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T14:20:35.515+01:00  INFO 15200 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T14:20:35.516+01:00  INFO 15200 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T14:20:35.568+01:00  INFO 15200 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T14:20:35.777+01:00  INFO 15200 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T14:20:35.898+01:00  INFO 15200 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4b508371
+2026-03-23T14:20:35.900+01:00  INFO 15200 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T14:20:35.927+01:00  INFO 15200 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T14:20:35.988+01:00  INFO 15200 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.033s)
+2026-03-23T14:20:36.048+01:00  INFO 15200 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2026-03-23T14:20:36.052+01:00  INFO 15200 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T14:20:36.133+01:00  INFO 15200 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T14:20:36.177+01:00  INFO 15200 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T14:20:36.219+01:00  INFO 15200 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T14:20:36.526+01:00  INFO 15200 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T14:20:37.317+01:00  INFO 15200 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T14:20:37.663+01:00  WARN 15200 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T14:20:38.046+01:00  INFO 15200 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 4.152 seconds (process running for 5.274)
+2026-03-23T14:24:32.838+01:00  INFO 15200 --- [eimt_lab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T14:24:33.870+01:00  INFO 15200 --- [eimt_lab] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 633 ms
+2026-03-23T14:24:54.621+01:00 DEBUG 15200 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0 where b1_0.category=? and b1_0.state=? and b1_0.author_id=? and b1_0.rented=? order by b1_0.name desc offset ? rows fetch first ? rows only
+2026-03-23T14:24:54.623+01:00 TRACE 15200 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [THRILLER]
+2026-03-23T14:24:54.623+01:00 TRACE 15200 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [GOOD]
+2026-03-23T14:24:54.623+01:00 TRACE 15200 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [1]
+2026-03-23T14:24:54.623+01:00 TRACE 15200 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (4:BOOLEAN) <- [false]
+2026-03-23T14:24:54.623+01:00 TRACE 15200 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (5:INTEGER) <- [0]
+2026-03-23T14:24:54.623+01:00 TRACE 15200 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (6:INTEGER) <- [10]
+2026-03-23T14:24:54.712+01:00  WARN 15200 --- [eimt_lab] [http-nio-8080-exec-5] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23T14:34:25.594+01:00  INFO 15200 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T14:34:25.606+01:00  INFO 15200 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T14:34:29.545+01:00  INFO 23204 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 23204 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T14:34:29.548+01:00  INFO 23204 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T14:34:30.714+01:00  INFO 23204 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T14:34:30.714+01:00  INFO 23204 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T14:34:30.755+01:00  INFO 23204 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T14:34:30.936+01:00  INFO 23204 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T14:34:31.049+01:00  INFO 23204 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@65e620b0
+2026-03-23T14:34:31.051+01:00  INFO 23204 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T14:34:31.074+01:00  INFO 23204 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T14:34:31.123+01:00  INFO 23204 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.026s)
+2026-03-23T14:34:31.172+01:00  INFO 23204 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2026-03-23T14:34:31.178+01:00  INFO 23204 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T14:34:31.256+01:00  INFO 23204 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T14:34:31.292+01:00  INFO 23204 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T14:34:31.315+01:00  INFO 23204 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T14:34:31.591+01:00  INFO 23204 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T14:34:32.290+01:00  INFO 23204 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T14:34:32.651+01:00  WARN 23204 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T14:34:33.010+01:00  INFO 23204 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 3.836 seconds (process running for 4.538)
+2026-03-23T14:34:37.994+01:00  INFO 23204 --- [eimt_lab] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T14:34:39.015+01:00  INFO 23204 --- [eimt_lab] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 616 ms
+2026-03-23T14:34:54.400+01:00 DEBUG 23204 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0 fetch first ? rows only
+2026-03-23T14:34:54.404+01:00 TRACE 23204 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [10]
+2026-03-23T14:34:54.445+01:00 DEBUG 23204 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:34:54.445+01:00 TRACE 23204 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+2026-03-23T14:34:54.472+01:00 DEBUG 23204 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:34:54.472+01:00 TRACE 23204 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T14:34:54.478+01:00 DEBUG 23204 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:34:54.479+01:00 TRACE 23204 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2026-03-23T14:34:54.509+01:00  WARN 23204 --- [eimt_lab] [http-nio-8080-exec-5] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23T14:34:54.529+01:00  WARN 23204 --- [eimt_lab] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Invalid property 'availableCopies' of bean class [mk.ukim.finki.wp.eimt_lab.model.domain.Book]: Could not find field for property during fallback access]
+2026-03-23T14:38:21.190+01:00  INFO 23204 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T14:38:21.195+01:00  INFO 23204 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T14:38:25.860+01:00  INFO 25644 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 25644 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T14:38:25.863+01:00  INFO 25644 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T14:38:27.018+01:00  INFO 25644 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T14:38:27.019+01:00  INFO 25644 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T14:38:27.062+01:00  INFO 25644 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T14:38:27.241+01:00  INFO 25644 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T14:38:27.354+01:00  INFO 25644 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d3cce46
+2026-03-23T14:38:27.355+01:00  INFO 25644 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T14:38:27.377+01:00  INFO 25644 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T14:38:27.428+01:00  INFO 25644 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.027s)
+2026-03-23T14:38:27.481+01:00  INFO 25644 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2026-03-23T14:38:27.486+01:00  INFO 25644 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T14:38:27.567+01:00  INFO 25644 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T14:38:27.609+01:00  INFO 25644 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T14:38:27.636+01:00  INFO 25644 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T14:38:27.951+01:00  INFO 25644 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T14:38:28.693+01:00  INFO 25644 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T14:38:29.052+01:00  WARN 25644 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T14:38:29.404+01:00  INFO 25644 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 3.943 seconds (process running for 4.757)
+2026-03-23T14:38:32.070+01:00  INFO 25644 --- [eimt_lab] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T14:38:33.236+01:00  INFO 25644 --- [eimt_lab] [http-nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 738 ms
+2026-03-23T14:38:37.602+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,b1_0.available_copies,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0 fetch first ? rows only
+2026-03-23T14:38:37.607+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [10]
+2026-03-23T14:38:37.652+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:38:37.652+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+2026-03-23T14:38:37.674+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:38:37.675+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T14:38:37.678+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:38:37.678+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2026-03-23T14:38:37.702+01:00  WARN 25644 --- [eimt_lab] [http-nio-8080-exec-6] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23T14:41:06.372+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,b1_0.available_copies,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0
+2026-03-23T14:41:06.377+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:41:06.377+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+2026-03-23T14:41:06.380+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:41:06.380+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T14:41:06.384+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:41:06.384+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2026-03-23T14:41:09.690+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,b1_0.available_copies,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0
+2026-03-23T14:41:09.692+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:41:09.692+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+2026-03-23T14:41:09.694+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:41:09.694+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T14:41:09.695+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:41:09.695+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2026-03-23T14:41:29.090+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,b1_0.available_copies,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0
+2026-03-23T14:41:29.095+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:41:29.096+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+2026-03-23T14:41:29.101+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:41:29.102+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T14:41:29.105+01:00 DEBUG 25644 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T14:41:29.105+01:00 TRACE 25644 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2026-03-23T14:50:23.051+01:00  INFO 25644 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T14:50:23.064+01:00  INFO 25644 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T14:50:27.842+01:00  INFO 2956 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 2956 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T14:50:27.844+01:00  INFO 2956 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T14:50:29.040+01:00  INFO 2956 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T14:50:29.040+01:00  INFO 2956 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T14:50:29.092+01:00  INFO 2956 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T14:50:29.296+01:00  INFO 2956 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T14:50:29.429+01:00  INFO 2956 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25fd6d1e
+2026-03-23T14:50:29.452+01:00  INFO 2956 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T14:50:29.476+01:00  INFO 2956 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T14:50:29.534+01:00  INFO 2956 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.031s)
+2026-03-23T14:50:29.576+01:00  INFO 2956 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2026-03-23T14:50:29.580+01:00  INFO 2956 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T14:50:29.663+01:00  INFO 2956 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T14:50:29.702+01:00  INFO 2956 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T14:50:29.730+01:00  INFO 2956 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T14:50:30.013+01:00  INFO 2956 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T14:50:30.944+01:00  INFO 2956 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T14:50:31.662+01:00  WARN 2956 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T14:50:32.204+01:00  INFO 2956 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 4.785 seconds (process running for 5.582)
+2026-03-23T14:50:34.523+01:00  INFO 2956 --- [eimt_lab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T14:50:35.525+01:00  INFO 2956 --- [eimt_lab] [http-nio-8080-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 625 ms
+2026-03-23T14:50:56.520+01:00 DEBUG 2956 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at,b1_0.available_copies,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0 join authors a1_0 on a1_0.id=b1_0.author_id join countries c1_0 on c1_0.id=a1_0.country_id where b1_0.category=? and b1_0.state=? and b1_0.author_id=? and b1_0.rented=? order by b1_0.name desc offset ? rows fetch first ? rows only
+2026-03-23T14:50:56.520+01:00 TRACE 2956 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [NOVEL]
+2026-03-23T14:50:56.520+01:00 TRACE 2956 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [GOOD]
+2026-03-23T14:50:56.520+01:00 TRACE 2956 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [1]
+2026-03-23T14:50:56.520+01:00 TRACE 2956 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (4:BOOLEAN) <- [false]
+2026-03-23T14:50:56.520+01:00 TRACE 2956 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (5:INTEGER) <- [0]
+2026-03-23T14:50:56.520+01:00 TRACE 2956 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (6:INTEGER) <- [10]
+2026-03-23T14:50:56.576+01:00  WARN 2956 --- [eimt_lab] [http-nio-8080-exec-5] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23T14:57:38.070+01:00  INFO 2956 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T14:57:38.073+01:00  INFO 2956 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T14:57:41.981+01:00  INFO 27536 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 27536 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T14:57:41.983+01:00  INFO 27536 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T14:57:43.155+01:00  INFO 27536 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T14:57:43.156+01:00  INFO 27536 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T14:57:43.193+01:00  INFO 27536 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T14:57:43.404+01:00  INFO 27536 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T14:57:43.549+01:00  INFO 27536 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@79604abe
+2026-03-23T14:57:43.552+01:00  INFO 27536 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T14:57:43.586+01:00  INFO 27536 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T14:57:43.639+01:00  INFO 27536 --- [eimt_lab] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-03-23T14:57:43.644+01:00  INFO 27536 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.021s)
+2026-03-23T14:57:43.662+01:00  INFO 27536 --- [eimt_lab] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-03-23T14:57:43.708+01:00  INFO 27536 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-03-23T14:57:43.717+01:00  INFO 27536 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create books and authors"
+2026-03-23T14:57:43.755+01:00  INFO 27536 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - insert data into books and authors and countries tables"
+2026-03-23T14:57:43.782+01:00  INFO 27536 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - add available copies"
+2026-03-23T14:57:43.805+01:00  INFO 27536 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - create book details view"
+2026-03-23T14:57:43.831+01:00  INFO 27536 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 4 migrations to schema "public", now at version v4 (execution time 00:00.035s)
+2026-03-23T14:57:43.936+01:00  INFO 27536 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T14:57:43.979+01:00  INFO 27536 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T14:57:44.007+01:00  INFO 27536 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T14:57:44.285+01:00  INFO 27536 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T14:57:45.078+01:00  INFO 27536 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T14:57:45.422+01:00  WARN 27536 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T14:57:45.803+01:00  INFO 27536 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 4.198 seconds (process running for 5.283)
+2026-03-23T14:57:48.032+01:00  INFO 27536 --- [eimt_lab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T14:57:49.246+01:00  INFO 27536 --- [eimt_lab] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 749 ms
+2026-03-23T15:07:30.176+01:00  INFO 27536 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T15:07:30.189+01:00  INFO 27536 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T15:07:33.410+01:00  INFO 5836 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 5836 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T15:07:33.410+01:00  INFO 5836 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T15:07:34.778+01:00  INFO 5836 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T15:07:34.778+01:00  INFO 5836 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T15:07:34.829+01:00  INFO 5836 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T15:07:35.054+01:00  INFO 5836 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T15:07:35.176+01:00  INFO 5836 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@485deee1
+2026-03-23T15:07:35.178+01:00  INFO 5836 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T15:07:35.204+01:00  INFO 5836 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T15:07:35.274+01:00  INFO 5836 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.040s)
+2026-03-23T15:07:35.323+01:00  INFO 5836 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 4
+2026-03-23T15:07:35.325+01:00  INFO 5836 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T15:07:35.409+01:00  INFO 5836 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T15:07:35.447+01:00  INFO 5836 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T15:07:35.512+01:00  INFO 5836 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T15:07:36.353+01:00  INFO 5836 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T15:07:37.342+01:00  INFO 5836 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T15:07:37.721+01:00  WARN 5836 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T15:07:38.082+01:00  INFO 5836 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 5.035 seconds (process running for 5.602)
+2026-03-23T15:09:57.085+01:00  INFO 5836 --- [eimt_lab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T15:10:11.266+01:00 DEBUG 5836 --- [eimt_lab] [http-nio-8080-exec-2] org.hibernate.SQL                        : select bdv1_0.id,bdv1_0.author_full_name,bdv1_0.available_copies,bdv1_0.book_name,bdv1_0.category,bdv1_0.country_name,bdv1_0.state from book_details_view bdv1_0
+2026-03-23T15:49:24.098+01:00  WARN 5836 --- [eimt_lab] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m48s623ms962µs).
+2026-03-23T15:52:30.912+01:00  INFO 5836 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T15:52:30.929+01:00  INFO 5836 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T15:52:34.599+01:00  INFO 26836 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 26836 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T15:52:34.611+01:00  INFO 26836 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T15:52:35.850+01:00  INFO 26836 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T15:52:35.850+01:00  INFO 26836 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T15:52:35.887+01:00  INFO 26836 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T15:52:36.071+01:00  INFO 26836 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T15:52:36.194+01:00  INFO 26836 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3193e21d
+2026-03-23T15:52:36.194+01:00  INFO 26836 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T15:52:36.223+01:00  INFO 26836 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T15:52:36.290+01:00  INFO 26836 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.040s)
+2026-03-23T15:52:36.351+01:00  INFO 26836 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 4
+2026-03-23T15:52:36.355+01:00  INFO 26836 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T15:52:36.451+01:00  INFO 26836 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T15:52:36.487+01:00  INFO 26836 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T15:52:36.520+01:00  INFO 26836 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T15:52:36.825+01:00  INFO 26836 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T15:52:37.562+01:00  INFO 26836 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T15:52:37.981+01:00  WARN 26836 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T15:52:38.415+01:00  INFO 26836 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 4.238 seconds (process running for 4.878)
+2026-03-23T15:52:47.517+01:00  INFO 26836 --- [eimt_lab] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T15:54:14.723+01:00  INFO 26836 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T15:54:14.743+01:00  INFO 26836 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T15:54:18.814+01:00  INFO 7272 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 7272 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T15:54:18.814+01:00  INFO 7272 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T15:54:20.045+01:00  INFO 7272 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T15:54:20.045+01:00  INFO 7272 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T15:54:20.087+01:00  INFO 7272 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T15:54:20.270+01:00  INFO 7272 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T15:54:20.406+01:00  INFO 7272 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c573229
+2026-03-23T15:54:20.407+01:00  INFO 7272 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T15:54:20.431+01:00  INFO 7272 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T15:54:20.482+01:00  INFO 7272 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.028s)
+2026-03-23T15:54:20.525+01:00  INFO 7272 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 4
+2026-03-23T15:54:20.528+01:00  INFO 7272 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T15:54:20.597+01:00  INFO 7272 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T15:54:20.635+01:00  INFO 7272 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T15:54:20.666+01:00  INFO 7272 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T15:54:20.985+01:00  INFO 7272 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T15:54:21.744+01:00  INFO 7272 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T15:54:22.152+01:00  WARN 7272 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T15:54:22.707+01:00  INFO 7272 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 4.287 seconds (process running for 5.138)
+2026-03-23T15:54:34.508+01:00  INFO 7272 --- [eimt_lab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T15:54:34.703+01:00 DEBUG 7272 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.SQL                        : SELECT b.* FROM books b JOIN authors a ON b.author_id = a.id JOIN countries c ON a.country_id = c.id WHERE c.name = ?
+2026-03-23T15:54:34.707+01:00 TRACE 7272 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Macedonia]
+2026-03-23T15:54:34.785+01:00 DEBUG 7272 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T15:54:34.785+01:00 TRACE 7272 --- [eimt_lab] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2026-03-23T15:59:13.402+01:00  INFO 7272 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T15:59:13.406+01:00  INFO 7272 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T15:59:20.726+01:00  INFO 17392 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 17392 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T15:59:20.729+01:00  INFO 17392 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T15:59:21.941+01:00  INFO 17392 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T15:59:21.949+01:00  INFO 17392 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T15:59:22.009+01:00  INFO 17392 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T15:59:22.203+01:00  INFO 17392 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T15:59:22.311+01:00  INFO 17392 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@559fd5ec
+2026-03-23T15:59:22.311+01:00  INFO 17392 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T15:59:22.335+01:00  INFO 17392 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T15:59:22.389+01:00  INFO 17392 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.029s)
+2026-03-23T15:59:22.431+01:00  INFO 17392 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 4
+2026-03-23T15:59:22.435+01:00  INFO 17392 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T15:59:22.507+01:00  INFO 17392 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T15:59:22.550+01:00  INFO 17392 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T15:59:22.578+01:00  INFO 17392 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T15:59:23.212+01:00  INFO 17392 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T15:59:25.267+01:00  INFO 17392 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T15:59:26.401+01:00  WARN 17392 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T15:59:26.972+01:00  INFO 17392 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 6.608 seconds (process running for 7.323)
+2026-03-23T15:59:28.778+01:00  INFO 17392 --- [eimt_lab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T15:59:30.009+01:00  INFO 17392 --- [eimt_lab] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 797 ms
+2026-03-23T15:59:46.087+01:00 DEBUG 17392 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T15:59:46.087+01:00 TRACE 17392 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [-10]
+2026-03-23T15:59:46.144+01:00 ERROR 17392 --- [eimt_lab] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: mk.ukim.finki.wp.eimt_lab.model.exception.AuthorNotFoundException: A author with id -10 does not exist.] with root cause
+
+mk.ukim.finki.wp.eimt_lab.model.exception.AuthorNotFoundException: A author with id -10 does not exist.
+	at mk.ukim.finki.wp.eimt_lab.service.application.impl.BookApplicationServiceImpl.lambda$create$0(BookApplicationServiceImpl.java:51) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at mk.ukim.finki.wp.eimt_lab.service.application.impl.BookApplicationServiceImpl.create(BookApplicationServiceImpl.java:51) ~[classes/:na]
+	at mk.ukim.finki.wp.eimt_lab.web.controller.BookController.create(BookController.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-03-23T16:02:15.403+01:00  INFO 17392 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T16:02:15.408+01:00  INFO 17392 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T16:02:18.987+01:00  INFO 25044 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 25044 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T16:02:18.987+01:00  INFO 25044 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T16:02:20.152+01:00  INFO 25044 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T16:02:20.152+01:00  INFO 25044 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T16:02:20.182+01:00  INFO 25044 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T16:02:20.368+01:00  INFO 25044 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T16:02:20.473+01:00  INFO 25044 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@210a26b
+2026-03-23T16:02:20.477+01:00  INFO 25044 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T16:02:20.500+01:00  INFO 25044 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T16:02:20.553+01:00  INFO 25044 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.029s)
+2026-03-23T16:02:20.592+01:00  INFO 25044 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 4
+2026-03-23T16:02:20.596+01:00  INFO 25044 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T16:02:20.675+01:00  INFO 25044 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T16:02:20.712+01:00  INFO 25044 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T16:02:20.739+01:00  INFO 25044 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T16:02:21.004+01:00  INFO 25044 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T16:02:22.198+01:00  INFO 25044 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T16:02:22.568+01:00  WARN 25044 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T16:02:22.980+01:00  INFO 25044 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 4.356 seconds (process running for 4.968)
+2026-03-23T16:03:03.137+01:00  INFO 25044 --- [eimt_lab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T16:03:04.182+01:00  INFO 25044 --- [eimt_lab] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 744 ms
+2026-03-23T16:03:14.755+01:00 DEBUG 25044 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T16:03:14.755+01:00 TRACE 25044 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T16:03:14.921+01:00 ERROR 25044 --- [eimt_lab] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: Validation failed for classes [mk.ukim.finki.wp.eimt_lab.model.domain.Book] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Brojot na kopii ne moze da bide negativen', propertyPath=availableCopies, rootBeanClass=class mk.ukim.finki.wp.eimt_lab.model.domain.Book, messageTemplate='Brojot na kopii ne moze da bide negativen'}
+]] with root cause
+
+jakarta.validation.ConstraintViolationException: Validation failed for classes [mk.ukim.finki.wp.eimt_lab.model.domain.Book] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Brojot na kopii ne moze da bide negativen', propertyPath=availableCopies, rootBeanClass=class mk.ukim.finki.wp.eimt_lab.model.domain.Book, messageTemplate='Brojot na kopii ne moze da bide negativen'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:161) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:84) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:201) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:79) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:393) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:307) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.2.3.jar:6.2.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy152.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320) ~[spring-orm-6.2.3.jar:6.2.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy152.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:636) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.3.jar:6.2.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.3.jar:6.2.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy162.save(Unknown Source) ~[na:na]
+	at mk.ukim.finki.wp.eimt_lab.service.domain.impl.BookServiceImpl.create(BookServiceImpl.java:37) ~[classes/:na]
+	at mk.ukim.finki.wp.eimt_lab.service.application.impl.BookApplicationServiceImpl.create(BookApplicationServiceImpl.java:52) ~[classes/:na]
+	at mk.ukim.finki.wp.eimt_lab.web.controller.BookController.create(BookController.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-03-23T16:05:18.471+01:00  INFO 25044 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T16:05:18.517+01:00  INFO 25044 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T16:05:24.980+01:00  INFO 20540 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 20540 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T16:05:24.982+01:00  INFO 20540 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T16:05:26.227+01:00  INFO 20540 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T16:05:26.232+01:00  INFO 20540 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T16:05:26.274+01:00  INFO 20540 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T16:05:26.440+01:00  INFO 20540 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T16:05:26.552+01:00  INFO 20540 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ab2ba47
+2026-03-23T16:05:26.552+01:00  INFO 20540 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T16:05:26.580+01:00  INFO 20540 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T16:05:26.632+01:00  INFO 20540 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.028s)
+2026-03-23T16:05:26.677+01:00  INFO 20540 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 4
+2026-03-23T16:05:26.681+01:00  INFO 20540 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T16:05:26.747+01:00  INFO 20540 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T16:05:26.799+01:00  INFO 20540 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T16:05:26.815+01:00  INFO 20540 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T16:05:27.100+01:00  INFO 20540 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T16:05:29.055+01:00  INFO 20540 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T16:05:30.345+01:00  WARN 20540 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T16:05:31.354+01:00  INFO 20540 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 6.82 seconds (process running for 7.453)
+2026-03-23T16:05:31.608+01:00  INFO 20540 --- [eimt_lab] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T16:05:32.669+01:00  INFO 20540 --- [eimt_lab] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 713 ms
+2026-03-23T16:05:46.650+01:00 DEBUG 20540 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T16:05:46.650+01:00 TRACE 20540 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T16:05:46.817+01:00 ERROR 20540 --- [eimt_lab] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: Validation failed for classes [mk.ukim.finki.wp.eimt_lab.model.domain.Book] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Brojot na kopii ne moze da bide negativen', propertyPath=availableCopies, rootBeanClass=class mk.ukim.finki.wp.eimt_lab.model.domain.Book, messageTemplate='Brojot na kopii ne moze da bide negativen'}
+]] with root cause
+
+jakarta.validation.ConstraintViolationException: Validation failed for classes [mk.ukim.finki.wp.eimt_lab.model.domain.Book] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Brojot na kopii ne moze da bide negativen', propertyPath=availableCopies, rootBeanClass=class mk.ukim.finki.wp.eimt_lab.model.domain.Book, messageTemplate='Brojot na kopii ne moze da bide negativen'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:161) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:84) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:201) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:79) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:393) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:307) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.2.3.jar:6.2.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy152.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320) ~[spring-orm-6.2.3.jar:6.2.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy152.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:636) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.3.jar:6.2.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.3.jar:6.2.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy162.save(Unknown Source) ~[na:na]
+	at mk.ukim.finki.wp.eimt_lab.service.domain.impl.BookServiceImpl.create(BookServiceImpl.java:37) ~[classes/:na]
+	at mk.ukim.finki.wp.eimt_lab.service.application.impl.BookApplicationServiceImpl.create(BookApplicationServiceImpl.java:52) ~[classes/:na]
+	at mk.ukim.finki.wp.eimt_lab.web.controller.BookController.create(BookController.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-03-23T16:13:46.738+01:00  INFO 20540 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T16:13:46.741+01:00  INFO 20540 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-23T16:13:53.491+01:00  INFO 12676 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Starting EimtLabApplication using Java 23 with PID 12676 (C:\desktop\eimt_lab\target\classes started by HP in C:\desktop\eimt_lab)
+2026-03-23T16:13:53.494+01:00  INFO 12676 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : The following 1 profile is active: "dev"
+2026-03-23T16:13:54.953+01:00  INFO 12676 --- [eimt_lab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T16:13:54.954+01:00  INFO 12676 --- [eimt_lab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-23T16:13:54.994+01:00  INFO 12676 --- [eimt_lab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T16:13:55.206+01:00  INFO 12676 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T16:13:55.448+01:00  INFO 12676 --- [eimt_lab] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6335f04a
+2026-03-23T16:13:55.453+01:00  INFO 12676 --- [eimt_lab] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T16:13:55.511+01:00  INFO 12676 --- [eimt_lab] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/eimt_lab (PostgreSQL 17.4)
+2026-03-23T16:13:55.621+01:00  INFO 12676 --- [eimt_lab] [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.065s)
+2026-03-23T16:13:55.652+01:00  INFO 12676 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 4
+2026-03-23T16:13:55.659+01:00  INFO 12676 --- [eimt_lab] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-03-23T16:13:55.854+01:00  INFO 12676 --- [eimt_lab] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T16:13:55.954+01:00  INFO 12676 --- [eimt_lab] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-23T16:13:56.013+01:00  INFO 12676 --- [eimt_lab] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T16:13:56.702+01:00  INFO 12676 --- [eimt_lab] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T16:13:58.666+01:00  INFO 12676 --- [eimt_lab] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T16:13:59.898+01:00  WARN 12676 --- [eimt_lab] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T16:14:00.919+01:00  INFO 12676 --- [eimt_lab] [main] m.u.f.wp.eimt_lab.EimtLabApplication     : Started EimtLabApplication in 7.9 seconds (process running for 8.638)
+2026-03-23T16:14:19.177+01:00  INFO 12676 --- [eimt_lab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T16:14:20.441+01:00  INFO 12676 --- [eimt_lab] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 816 ms
+2026-03-23T16:14:31.155+01:00 DEBUG 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T16:14:31.155+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T16:14:31.305+01:00 DEBUG 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into books (author_id,available_copies,category,created_at,name,rented,state,updated_at) values (?,?,?,?,?,?,?,?)
+2026-03-23T16:14:31.340+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T16:14:31.340+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [16]
+2026-03-23T16:14:31.340+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [NOVEL]
+2026-03-23T16:14:31.340+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (4:TIMESTAMP) <- [2026-03-23T16:14:31.248235200]
+2026-03-23T16:14:31.340+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (5:VARCHAR) <- [string]
+2026-03-23T16:14:31.340+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (6:BOOLEAN) <- [true]
+2026-03-23T16:14:31.340+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (7:VARCHAR) <- [GOOD]
+2026-03-23T16:14:31.343+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (8:TIMESTAMP) <- [2026-03-23T16:14:31.248235200]
+2026-03-23T16:15:21.172+01:00 DEBUG 12676 --- [eimt_lab] [http-nio-8080-exec-7] org.hibernate.SQL                        : select bdv1_0.id,bdv1_0.author_full_name,bdv1_0.available_copies,bdv1_0.book_name,bdv1_0.category,bdv1_0.country_name,bdv1_0.state from book_details_view bdv1_0
+2026-03-23T16:15:29.168+01:00 DEBUG 12676 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.SQL                        : select bdv1_0.id,bdv1_0.author_full_name,bdv1_0.available_copies,bdv1_0.book_name,bdv1_0.category,bdv1_0.country_name,bdv1_0.state from book_details_view bdv1_0 where bdv1_0.author_full_name like ? escape '\'
+2026-03-23T16:15:29.175+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [%1%]
+2026-03-23T16:16:05.581+01:00 DEBUG 12676 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T16:16:05.582+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9007199254740991]
+2026-03-23T16:16:05.595+01:00 ERROR 12676 --- [eimt_lab] [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: mk.ukim.finki.wp.eimt_lab.model.exception.AuthorNotFoundException: A author with id 9007199254740991 does not exist.] with root cause
+
+mk.ukim.finki.wp.eimt_lab.model.exception.AuthorNotFoundException: A author with id 9007199254740991 does not exist.
+	at mk.ukim.finki.wp.eimt_lab.service.application.impl.BookApplicationServiceImpl.lambda$update$1(BookApplicationServiceImpl.java:66) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at mk.ukim.finki.wp.eimt_lab.service.application.impl.BookApplicationServiceImpl.update(BookApplicationServiceImpl.java:66) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723) ~[spring-aop-6.2.3.jar:6.2.3]
+	at mk.ukim.finki.wp.eimt_lab.service.application.impl.BookApplicationServiceImpl$$SpringCGLIB$$0.update(<generated>) ~[classes/:na]
+	at mk.ukim.finki.wp.eimt_lab.web.controller.BookController.update(BookController.java:56) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-03-23T16:16:25.193+01:00 DEBUG 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.SQL                        : select a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at from authors a1_0 join countries c1_0 on c1_0.id=a1_0.country_id where a1_0.id=?
+2026-03-23T16:16:25.193+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T16:16:25.209+01:00 DEBUG 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.SQL                        : select b1_0.id,b1_0.author_id,a1_0.id,a1_0.country_id,c1_0.id,c1_0.continent,c1_0.name,a1_0.created_at,a1_0.name,a1_0.surname,a1_0.updated_at,b1_0.available_copies,b1_0.category,b1_0.created_at,b1_0.name,b1_0.rented,b1_0.state,b1_0.updated_at from books b1_0 join authors a1_0 on a1_0.id=b1_0.author_id join countries c1_0 on c1_0.id=a1_0.country_id where b1_0.id=?
+2026-03-23T16:16:25.209+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T16:16:25.232+01:00 DEBUG 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.SQL                        : update books set author_id=?,available_copies=?,category=?,name=?,rented=?,state=?,updated_at=? where id=?
+2026-03-23T16:16:25.232+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2026-03-23T16:16:25.232+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
+2026-03-23T16:16:25.232+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [NOVEL]
+2026-03-23T16:16:25.232+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [e]
+2026-03-23T16:16:25.232+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (5:BOOLEAN) <- [true]
+2026-03-23T16:16:25.232+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (6:VARCHAR) <- [GOOD]
+2026-03-23T16:16:25.232+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (7:TIMESTAMP) <- [2026-03-23T16:16:25.227530100]
+2026-03-23T16:16:25.232+01:00 TRACE 12676 --- [eimt_lab] [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (8:BIGINT) <- [1]
+2026-03-23T16:21:44.388+01:00  INFO 12676 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T16:21:44.394+01:00  INFO 12676 --- [eimt_lab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

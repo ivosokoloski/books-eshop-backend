@@ -1,8 +1,14 @@
 package mk.ukim.finki.wp.eimt_lab.service.domain.impl;
 
 import mk.ukim.finki.wp.eimt_lab.model.domain.Book;
+import mk.ukim.finki.wp.eimt_lab.model.domain.BookCategory;
+import mk.ukim.finki.wp.eimt_lab.model.domain.BookState;
 import mk.ukim.finki.wp.eimt_lab.repository.BookRepository;
+import mk.ukim.finki.wp.eimt_lab.repository.specifiation.BookSpecifications;
 import mk.ukim.finki.wp.eimt_lab.service.domain.BookService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -53,4 +59,18 @@ public class BookServiceImpl implements BookService {
         return book;
 
     }
+
+    @Override
+    public Page<Book> findAll(BookCategory category, BookState state, Long authorId, Boolean available, Pageable pageable) {
+        Specification<Book> spec = BookSpecifications.filterBy(category, state, authorId, available);
+        return bookRepository.findAll(spec, pageable);
+    }
+    @Override
+    public Book rent(Long id) {
+        Book book = bookRepository.findById(id).orElseThrow();
+        book.setAvailableCopies(book.getAvailableCopies() - 1);
+        return bookRepository.save(book);
+    }
+
+
 }

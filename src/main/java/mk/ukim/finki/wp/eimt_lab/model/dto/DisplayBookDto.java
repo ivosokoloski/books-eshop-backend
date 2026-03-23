@@ -12,7 +12,8 @@ public record DisplayBookDto(
         BookCategory category,
         BookState state,
         Long authorId,
-        boolean rented
+        boolean rented,
+        Integer availableCopies
 ) {
     public static DisplayBookDto from(Book book){
         return  new DisplayBookDto(
@@ -21,7 +22,8 @@ public record DisplayBookDto(
                 book.getCategory(),
                 book.getState(),
                 book.getAuthor().getId(),
-                book.isRented()
+                book.isRented(),
+                book.getAvailableCopies()
         );
     }
     public static List<DisplayBookDto> from(List<Book> books){

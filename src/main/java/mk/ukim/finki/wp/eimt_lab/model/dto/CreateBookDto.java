@@ -10,9 +10,10 @@ public record CreateBookDto(
         BookCategory category,
         BookState state,
         Long authorId,
-        boolean rented
+        boolean rented,
+        Integer availableCopies
 ) {
     public Book toBook(Author author){
-        return new Book(name,category,state,author,rented);
+        return new Book(name,category,state,author,rented,availableCopies);
     }
 }
