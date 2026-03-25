@@ -20,5 +20,5 @@ public interface BookService  {
 
     Optional<Book> deleteById(Long id);
     Page<Book> findAll(BookCategory category, BookState state, Long authorId, Boolean available, Pageable pageable);
-    Book rent(Long id);
+    Optional<Book> rent(Long id, Long userId);
 }

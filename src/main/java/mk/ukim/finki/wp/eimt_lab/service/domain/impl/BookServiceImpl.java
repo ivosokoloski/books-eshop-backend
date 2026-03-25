@@ -1,9 +1,9 @@
 package mk.ukim.finki.wp.eimt_lab.service.domain.impl;
 
-import mk.ukim.finki.wp.eimt_lab.model.domain.Book;
-import mk.ukim.finki.wp.eimt_lab.model.domain.BookCategory;
-import mk.ukim.finki.wp.eimt_lab.model.domain.BookState;
+import mk.ukim.finki.wp.eimt_lab.model.domain.*;
+import mk.ukim.finki.wp.eimt_lab.repository.BookLendingRepository;
 import mk.ukim.finki.wp.eimt_lab.repository.BookRepository;
+import mk.ukim.finki.wp.eimt_lab.repository.UserRepository;
 import mk.ukim.finki.wp.eimt_lab.repository.specifiation.BookSpecifications;
 import mk.ukim.finki.wp.eimt_lab.service.domain.BookService;
 import org.springframework.data.domain.Page;
@@ -16,9 +16,13 @@ import java.util.Optional;
 @Service
 public class BookServiceImpl implements BookService {
     private final BookRepository bookRepository;
+    private final UserRepository userRepository;
+    private final BookLendingRepository bookLendingRepository;
 
-    public BookServiceImpl(BookRepository bookRepository) {
+    public BookServiceImpl(BookRepository bookRepository, UserRepository userRepository, BookLendingRepository bookLendingRepository) {
         this.bookRepository = bookRepository;
+        this.userRepository = userRepository;
+        this.bookLendingRepository = bookLendingRepository;
     }
 
 
@@ -66,10 +70,23 @@ public class BookServiceImpl implements BookService {
         return bookRepository.findAll(spec, pageable);
     }
     @Override
-    public Book rent(Long id) {
-        Book book = bookRepository.findById(id).orElseThrow();
-        book.setAvailableCopies(book.getAvailableCopies() - 1);
-        return bookRepository.save(book);
+    public Optional<Book> rent(Long id, Long userId) {
+        return this.bookRepository.findById(id).map(book -> {
+            if (book.getAvailableCopies() <= 0) {
+                throw new RuntimeException("Nema dostapni kopii od knigata!");
+            }
+
+            User user = this.userRepository.findById(userId)
+                    .orElseThrow();
+
+            book.setAvailableCopies(book.getAvailableCopies() - 1);
+            this.bookRepository.save(book);
+
+            BookLending lending = new BookLending(user, book);
+            this.bookLendingRepository.save(lending);
+
+            return book;
+        });
     }
 
 

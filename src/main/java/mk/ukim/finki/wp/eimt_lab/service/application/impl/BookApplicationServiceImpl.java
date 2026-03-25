@@ -88,10 +88,10 @@ public class BookApplicationServiceImpl implements BookApplicationService {
 
     @Override
     @Transactional
-    public void rentBook(Long id, String email) {
-        Book book = bookService.rent(id);
+    public void rentBook(Long id, Long userId) {
+        Optional<Book> book = bookService.rent(id,userId);
 
-        this.eventPublisher.publishEvent(new BookRentedEvent(book, email));
+        this.eventPublisher.publishEvent(new BookRentedEvent(book));
     }
 
 

@@ -20,7 +20,7 @@ public class BookRentedListener {
     @TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
     public void onBookRented(BookRentedEvent event) {
         ActivityLog log = new ActivityLog(
-                event.book().getName(),
+                event.book().get(),
                 "BOOK_RENTED"
         );
         activityLogRepository.save(log);

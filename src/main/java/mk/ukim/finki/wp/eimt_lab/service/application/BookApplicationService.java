@@ -20,5 +20,5 @@ public interface BookApplicationService {
 
     Optional<DisplayBookDto> deleteById(Long id);
     Page<DisplayBookDto> findAll(BookCategory category, BookState state, Long authorId, Boolean available, int page, int size, String sortBy);
-    void rentBook(Long bookId, String userEmail);
+    void rentBook(Long bookId, Long userId);
 }

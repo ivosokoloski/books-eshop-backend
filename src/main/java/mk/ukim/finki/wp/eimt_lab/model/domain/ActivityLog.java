@@ -22,8 +22,8 @@ public class ActivityLog {
 
     private String eventType;
 
-    public ActivityLog(String bookName, String eventType) {
-        this.bookName = bookName;
+    public ActivityLog(Book bookName, String eventType) {
+        this.bookName = String.valueOf(bookName);
         this.eventTime = LocalDateTime.now();
         this.eventType = eventType;
     }

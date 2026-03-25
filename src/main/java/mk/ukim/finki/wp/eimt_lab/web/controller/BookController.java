@@ -110,8 +110,8 @@ public class BookController {
                 .collect(Collectors.toList());
     }
     @PostMapping("/rent/{id}")
-    public ResponseEntity<Void> rentBook(@PathVariable Long id, @RequestParam String email) {
-        this.bookApplicationService.rentBook(id, email);
+    public ResponseEntity<Void> rentBook(@PathVariable Long id, @RequestParam Long userId) {
+        this.bookApplicationService.rentBook(id, userId);
         return ResponseEntity.ok().build();
     }
     @GetMapping("/logs")
@@ -122,4 +122,5 @@ public class BookController {
         Pageable pageable = PageRequest.of(page, size);
         return activityLogRepository.findAll(pageable);
     }
+
 }
