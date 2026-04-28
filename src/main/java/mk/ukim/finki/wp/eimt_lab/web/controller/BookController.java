@@ -21,6 +21,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/books")
+@CrossOrigin(origins = "http://localhost:3000")
 public class BookController {
     private final BookApplicationService bookApplicationService;
     private final BookRepository bookRepository;
@@ -114,6 +115,7 @@ public class BookController {
         this.bookApplicationService.rentBook(id, userId);
         return ResponseEntity.ok().build();
     }
+
     @GetMapping("/logs")
     public Page<ActivityLog> getActivityLogs(
             @RequestParam(defaultValue = "0") int page,
