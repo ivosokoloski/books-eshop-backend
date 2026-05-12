@@ -45,8 +45,8 @@ public class JwtWebSecurityConfig {
     @Bean
     public RoleHierarchy roleHierarchy() {
         return RoleHierarchyImpl.withDefaultRolePrefix()
-            .role("ADMINISTRATOR").implies("USER")
-            .build();
+                .role("ADMINISTRATOR").implies("USER")
+                .build();
     }
 
     @Bean
@@ -59,56 +59,67 @@ public class JwtWebSecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-            .csrf(AbstractHttpConfigurer::disable)
-            .cors(corsCustomizer ->
-                corsCustomizer.configurationSource(corsConfigurationSource())
-            )
-            .headers(headers -> headers
-                .frameOptions(HeadersConfigurer.FrameOptionsConfig::sameOrigin)
-            )
-            .authorizeHttpRequests(authorizeHttpRequestsCustomizer ->
-                authorizeHttpRequestsCustomizer
-                    .requestMatchers(
-                        "/swagger-ui/**",
-                        "/v3/api-docs/**",
-                        "/api/user/register",
-                        "/api/user/login",
-                        "/api/books",
-                        "/api/authors/{id}",
-                        "/api/authors",
-                        "/api/countries/{id}",
-                        "/api/countries",
-                        "/api/users"
-
-                    )
-                    .permitAll()
-                    .requestMatchers(
-                        "/api/user/me"
-                    )
-                    .authenticated()
-                    .requestMatchers(
-                        "/api/categories",
-                        "/api/categories/{id}",
-                        "/api/products",
-                        "/api/products/{id}"
-                    )
-                    .hasRole("USER")
-                    .requestMatchers(
-                        "/api/categories/add",
-                        "/api/categories/{id}/edit",
-                        "/api/categories/{id}/delete",
-                        "/api/products/add",
-                        "/api/products/{id}/edit",
-                        "/api/products/{id}/delete"
-                    )
-                    .hasRole("ADMINISTRATOR")
-                    .anyRequest()
-                    .hasRole("ADMINISTRATOR")
-            )
-            .sessionManagement(sessionManagementConfigurer ->
-                sessionManagementConfigurer.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-            )
-            .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
+                .csrf(AbstractHttpConfigurer::disable)
+                .cors(corsCustomizer ->
+                        corsCustomizer.configurationSource(corsConfigurationSource())
+                )
+                .headers(headers -> headers
+                        .frameOptions(HeadersConfigurer.FrameOptionsConfig::sameOrigin)
+                )
+                .authorizeHttpRequests(authorizeHttpRequestsCustomizer ->
+                        authorizeHttpRequestsCustomizer
+                                .requestMatchers(
+                                        "/swagger-ui/**",
+                                        "/v3/api-docs/**",
+                                        "/api/user/register",
+                                        "/api/user/login",
+                                        "/api/books",
+                                        "/api/books/add",
+                                        "/api/books/{id}",
+                                        "/api/books/{id}/delete",
+                                        "/api/books/{id}/edit",
+                                        "/api/authors",
+                                        "/api/authors/add",
+                                        "/api/authors/{id}",
+                                        "/api/authors/{id}/delete",
+                                        "/api/authors/{id}/edit",
+                                        "/api/countries",
+                                        "/api/countries/add",
+                                        "/api/countries/{id}",
+                                        "/api/countries/{id}/delete",
+                                        "/api/countries/{id}/edit",
+                                        "/api/users",
+                                        "/api/users/add",
+                                        "/api/users/{id}"
+                                        )
+                                .permitAll()
+                                .requestMatchers(
+                                        "/api/user/me"
+                                )
+                                .authenticated()
+                                .requestMatchers(
+                                        "/api/categories",
+                                        "/api/categories/{id}",
+                                        "/api/products",
+                                        "/api/products/{id}"
+                                )
+                                .hasRole("USER")
+                                .requestMatchers(
+                                        "/api/categories/add",
+                                        "/api/categories/{id}/edit",
+                                        "/api/categories/{id}/delete",
+                                        "/api/products/add",
+                                        "/api/products/{id}/edit",
+                                        "/api/products/{id}/delete"
+                                )
+                                .hasRole("ADMINISTRATOR")
+                                .anyRequest()
+                                .hasRole("ADMINISTRATOR")
+                )
+                .sessionManagement(sessionManagementConfigurer ->
+                        sessionManagementConfigurer.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                )
+                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
 }

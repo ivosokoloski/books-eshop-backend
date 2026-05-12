@@ -10,6 +10,9 @@ import java.util.Map;
 
 @Repository
 public interface BookLendingRepository extends JpaRepository<BookLending, Long> {
+    @org.springframework.data.jpa.repository.Modifying
+    @org.springframework.transaction.annotation.Transactional
+    void deleteByBookId(Long bookId);
 
     @Query("SELECT b.name as name, COUNT(bl) as count FROM BookLending bl " +
             "JOIN bl.book b GROUP BY b.name ORDER BY COUNT(bl) DESC LIMIT 5")

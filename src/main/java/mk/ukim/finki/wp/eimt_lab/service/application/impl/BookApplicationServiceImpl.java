@@ -88,7 +88,7 @@ public class BookApplicationServiceImpl implements BookApplicationService {
 
     @Override
     @Transactional
-    public void rentBook(Long id, Long userId) {
+    public void  rentBook(Long id, Long userId) {
         Optional<Book> book = bookService.rent(id,userId);
 
         this.eventPublisher.publishEvent(new BookRentedEvent(book));
