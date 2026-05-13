@@ -1,5 +1,6 @@
 package mk.ukim.finki.wp.eimt_lab.web.controller;
 
+import jakarta.validation.Valid;
 import mk.ukim.finki.wp.eimt_lab.model.domain.User;
 import mk.ukim.finki.wp.eimt_lab.model.dto.*;
 import mk.ukim.finki.wp.eimt_lab.service.application.UserApplicationService;
@@ -58,6 +59,27 @@ public class UserController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.badRequest().build());
     }
+
+
+    @PutMapping("/{id}/edit")
+    public ResponseEntity<DisplayUserDto> update(
+            @PathVariable Long id,
+            @RequestBody CreateUserDto createUserDto
+    ) {
+        return userApplicationService
+                .update(id, createUserDto)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/{id}/delete")
+    public ResponseEntity<DisplayUserDto> deleteById(@PathVariable Long id) {
+        return userApplicationService
+                .deleteById(id)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
 
 
 

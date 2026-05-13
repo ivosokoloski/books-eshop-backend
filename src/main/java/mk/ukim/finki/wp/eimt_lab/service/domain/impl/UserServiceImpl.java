@@ -1,5 +1,6 @@
 package mk.ukim.finki.wp.eimt_lab.service.domain.impl;
 
+import mk.ukim.finki.wp.eimt_lab.model.domain.Country;
 import mk.ukim.finki.wp.eimt_lab.model.domain.User;
 import mk.ukim.finki.wp.eimt_lab.model.exceptions.IncorrectPasswordException;
 import mk.ukim.finki.wp.eimt_lab.model.exceptions.UserNotFoundException;
@@ -58,6 +59,26 @@ public class UserServiceImpl implements UserService {
             throw new IncorrectPasswordException();
         return user;
     }
+
+    @Override
+    public Optional<User> update(Long id, User user) {
+        return userRepository
+                .findById(id)
+                .map((existingAuthor) -> {
+                    existingAuthor.setName(user.getName());
+                    existingAuthor.setName(user.getSurname());
+                    existingAuthor.setName(user.getSurname());
+                    return userRepository.save(existingAuthor);
+                });
+    }
+
+    @Override
+    public Optional<User> deleteById(Long id) {
+        Optional<User> author = userRepository.findById(id);
+        author.ifPresent(userRepository::delete);
+        return author;
+    }
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return userRepository

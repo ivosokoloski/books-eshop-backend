@@ -1,5 +1,6 @@
 package mk.ukim.finki.wp.eimt_lab.service.domain;
 
+import mk.ukim.finki.wp.eimt_lab.model.domain.Country;
 import mk.ukim.finki.wp.eimt_lab.model.domain.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -14,6 +15,9 @@ public interface UserService {
     User register(User user);
 
     User login(String username, String password);
+    Optional<User> update(Long id, User user);
+
+    Optional<User> deleteById(Long id);
 
     UserDetails loadUserByUsername(String username) throws UsernameNotFoundException;
 }

@@ -97,6 +97,8 @@ public class JwtWebSecurityConfig {
                                         "/api/countries/{id}/edit",
                                         "/api/users",
                                         "/api/users/add",
+                                        "/api/users/{id}/delete",
+                                        "/api/users/{id}/edit",
                                         "/api/users/register",
                                         "/api/users/login",
                                         "/api/users/{id}"

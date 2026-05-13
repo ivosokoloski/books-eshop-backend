@@ -3,10 +3,7 @@ package mk.ukim.finki.wp.eimt_lab.service.application.impl;
 import java.util.Optional;
 import mk.ukim.finki.wp.eimt_lab.helpers.JwtHelper;
 import mk.ukim.finki.wp.eimt_lab.model.domain.User;
-import mk.ukim.finki.wp.eimt_lab.model.dto.LoginUserRequestDto;
-import mk.ukim.finki.wp.eimt_lab.model.dto.LoginUserResponseDto;
-import mk.ukim.finki.wp.eimt_lab.model.dto.RegisterUserRequestDto;
-import mk.ukim.finki.wp.eimt_lab.model.dto.RegisterUserResponseDto;
+import mk.ukim.finki.wp.eimt_lab.model.dto.*;
 import mk.ukim.finki.wp.eimt_lab.service.application.UserApplicationService;
 import mk.ukim.finki.wp.eimt_lab.service.domain.UserService;
 import org.springframework.stereotype.Service;
@@ -42,6 +39,21 @@ public class UserApplicationServiceImpl implements UserApplicationService {
         return userService
             .findByUsername(username)
             .map(RegisterUserResponseDto::from);
+    }
+
+    @Override
+    public Optional<DisplayUserDto> deleteById(Long id) {
+        return userService
+                .deleteById(id)
+                .map(DisplayUserDto::from);
+    }
+
+
+    @Override
+    public Optional<DisplayUserDto> update(Long id, CreateUserDto createUserDto) {
+        return userService
+                .update(id, createUserDto.toUser())
+                .map(DisplayUserDto::from);
     }
 }
 
